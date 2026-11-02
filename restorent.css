@@ -1,8 +1,4 @@
-
-/* Reset */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,302 +8,259 @@ html {
 }
 
 body {
+    margin: 0;
+    background-color: #fffaf3;
+    color: #38281f;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffaf2;
-    color: #333333;
     line-height: 1.6;
 }
 
-/* Header */
 .header {
-    background-color: #382016;
+    padding: 22px 18px 16px;
+    background-color: #4a2418;
     color: white;
     text-align: center;
-    padding: 25px 15px;
-    border-bottom: 5px solid #e5a344;
 }
 
 .header h1 {
-    font-size: 36px;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
 .header span,
 footer span {
-    color: #f4b544;
+    color: #f1b85b;
 }
 
-.header p {
-    color: #f5dfc6;
-    margin-bottom: 18px;
+.header > p {
+    margin: 4px 0 16px;
+    color: #f4e3cd;
 }
 
 nav {
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 nav a {
-    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
     color: white;
     text-decoration: none;
-    margin: 5px 12px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background-color: #f4b544;
-    color: #382016;
+    background-color: #68402f;
 }
 
-/* Hero Section */
 .hero {
-    min-height: 320px;
+    min-height: 330px;
+    padding: 55px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 45px 20px;
-    background: linear-gradient(
-        rgba(45, 24, 14, 0.75),
-        rgba(45, 24, 14, 0.75)
-    ),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
-    background-size: cover;
-    background-position: center;
+    background:
+        linear-gradient(rgba(40, 23, 16, .62), rgba(40, 23, 16, .62)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80") center / cover;
     color: white;
+    text-align: center;
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .hero h2 {
-    font-size: clamp(30px, 5vw, 44px);
-    margin-bottom: 15px;
+    margin: 0 0 12px;
+    font-size: 36px;
 }
 
 .hero p {
-    font-size: 17px;
-    margin-bottom: 25px;
+    margin: 0 0 20px;
 }
 
 .button {
     display: inline-block;
-    background-color: #e5a344;
-    color: #382016;
-    text-decoration: none;
+    padding: 9px 16px;
+    border: 1px solid #e6a845;
+    border-radius: 4px;
+    background-color: #e6a845;
+    color: #38281f;
     font-weight: bold;
-    padding: 12px 24px;
-    border: 2px solid #e5a344;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
 .button:hover {
-    background-color: #ffd17d;
-    transform: translateY(-3px);
+    background-color: #f4c778;
 }
 
-/* About Section */
 .about {
-    max-width: 900px;
-    margin: 35px auto;
-    padding: 25px;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 22px;
     text-align: center;
 }
 
-.about h2 {
-    color: #793b20;
-    margin-bottom: 15px;
-    font-size: 28px;
+.about h2,
+.menu > h2 {
+    margin: 0 0 8px;
+    color: #713923;
 }
 
 .about p {
-    font-size: 16px;
-    color: #62544b;
+    margin: 0;
+    color: #66564b;
 }
 
-/* Menu */
 .menu {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 15px 22px 35px;
+}
+
+.menu > h2,
+.subtitle {
+    text-align: center;
 }
 
 .menu > h2 {
-    text-align: center;
-    color: #793b20;
-    font-size: 36px;
-    letter-spacing: 2px;
+    font-size: 30px;
 }
 
 .subtitle {
-    text-align: center;
-    color: #806b5d;
-    margin-bottom: 35px;
+    margin: 0 0 25px;
+    color: #756459;
 }
 
 .menu-category {
-    margin: 30px 0;
-    padding: 25px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e4d7c8;
+    border-radius: 6px;
     background-color: white;
-    border: 1px solid #eadbca;
-    border-left: 5px solid #c57b35;
-    border-radius: 8px;
 }
 
 .menu-category > h3 {
-    font-size: 26px;
-    color: #793b20;
-    margin-bottom: 22px;
+    margin: 0 0 16px;
+    color: #713923;
+    font-size: 23px;
 }
 
-/* Food Cards */
 .food-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
+    gap: 16px;
 }
 
 .food-card {
     overflow: hidden;
-    background-color: #fffaf2;
-    border: 1px solid #e6d5c2;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.food-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(70, 35, 15, 0.15);
+    border: 1px solid #eadfd3;
+    border-radius: 5px;
+    background-color: #fffdf9;
 }
 
 .food-card img {
-    width: 100%;
-    height: 220px;
     display: block;
+    width: 100%;
+    height: 190px;
     object-fit: cover;
 }
 
 .food-info {
-    padding: 18px;
+    padding: 13px 15px;
 }
 
 .food-info h4 {
-    color: #5e2c19;
-    font-size: 20px;
-    margin-bottom: 8px;
+    margin: 0 0 5px;
+    color: #4a2418;
+    font-size: 18px;
 }
 
 .food-info p {
-    color: #65584f;
-    margin-bottom: 10px;
+    margin: 5px 0;
+    color: #62554b;
 }
 
 .food-info .price {
-    color: #a04e1c;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 12px;
     margin-bottom: 0;
+    color: #9a4f25;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-/* Ordered and Unordered Lists */
 .list-heading {
-    color: #793b20;
-    font-size: 19px;
-    margin: 25px 0 10px;
+    margin: 18px 0 5px;
+    color: #713923;
 }
 
 .menu-category ul,
 .menu-category ol {
-    padding-left: 30px;
-    margin: 10px 0;
+    margin: 6px 0;
+    padding-left: 24px;
 }
 
 .menu-category li {
-    padding: 5px 0;
-    color: #51433a;
-}
-
-.menu-category li::marker {
-    color: #c57b35;
-}
-
-.simple-list {
-    list-style-type: square;
+    padding: 3px 0;
 }
 
 .simple-list li {
-    border-bottom: 1px dashed #e6d5c2;
-    padding: 10px 5px;
+    border-bottom: 1px solid #eee5db;
 }
 
-/* Special Section */
 .special {
-    margin: 35px 0;
-    padding: 30px;
+    margin: 22px 0 10px;
+    padding: 20px;
+    border-left: 4px solid #d99037;
+    background-color: #f6ead8;
     text-align: center;
-    background-color: #382016;
-    color: white;
-    border-radius: 8px;
-    border: 2px solid #e5a344;
 }
 
 .special h3 {
-    color: #f4b544;
-    font-size: 28px;
-    margin-bottom: 12px;
+    margin: 0 0 8px;
+    color: #713923;
+    font-size: 22px;
 }
 
 .special p {
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
-/* Footer */
 footer {
-    background-color: #24140e;
-    color: #f5dfc6;
+    padding: 22px 15px;
+    background-color: #4a2418;
+    color: #f4e3cd;
     text-align: center;
-    padding: 30px 15px;
-    margin-top: 40px;
 }
 
 footer h2 {
-    font-size: 26px;
-    margin-bottom: 8px;
+    margin: 0 0 6px;
+    color: white;
+    font-size: 23px;
 }
 
 footer p {
-    margin: 8px 0;
-    font-size: 14px;
+    margin: 5px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 650px) {
-    .header h1 {
+@media (max-width: 600px) {
+    .hero {
+        min-height: 290px;
+        padding: 40px 18px;
+    }
+
+    .hero h2 {
         font-size: 29px;
     }
 
-    nav a {
-        margin: 3px;
-        padding: 7px;
-        font-size: 14px;
-    }
-
-    .hero {
-        min-height: 300px;
-    }
-
     .menu {
-        padding: 15px;
+        padding: 12px 15px 28px;
     }
 
     .menu-category {
-        padding: 18px;
+        padding: 15px;
     }
 
     .food-grid {
@@ -315,11 +268,6 @@ footer p {
     }
 
     .food-card img {
-        height: 210px;
-    }
-
-    .about {
-        margin: 20px auto;
-        padding: 20px;
+        height: 200px;
     }
 }
