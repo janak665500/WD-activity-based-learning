@@ -1,32 +1,41 @@
-# WD Activity Based Learning
+Web Development Activity Project
+================================
 
-## Student Details
+This repository contains three simple webpages made for our Web Development activity. The pages are built with HTML and CSS.
 
-- **Name:** Add your name
-- **Roll Number:** Add your roll number
-- **Branch:** Add your branch
-- **Section:** Add your section
+Student Details
+---------------
 
-## Selected Case Studies
+Name:KADALI JANAK SAI KARTHIK
+Roll Number: 26001081
+Branch: CSM
+Section: 4
 
-1. **Fitness Center and Gym Website** — [Open webpage](./Fitness%20Center%20and%20Gym%20Website%20.html)
-2. **Online Shopping Website** — [Open webpage](./online%20shopping.html)
-3. **Restaurant Menu Website** — [Open webpage](./restorent.html)
+Case Studies
+------------
 
-## Project Files
+1. Fitness Center and Gym Website
+   A basic website for a gym with information about programs, trainers, membership plans, and class timings.
 
-Each webpage has a separate CSS file:
+2. Online Shopping Website
+   A sample online store that displays electronic products, prices, special offers, and a newsletter form.
 
-- Fitness Center and Gym Website — `Fitness and gym.css`
-- Online Shopping Website — `online shopping.css`
-- Restaurant Menu Website — `restorent.css`
+3. Restaurant Menu Website
+   A restaurant page with information about the restaurant, food items, prices, and opening hours.
 
-## Consolidated Report
+Project Files
+-------------
 
-The PDF report includes screenshots of all three webpages: [case-study-report.pdf](./case-study-report.pdf).
+Each webpage has its own CSS file for its colours, layout, and other styles.
 
-## Submission Checklist
+Fitness website: Fitness Center and Gym Website .html and Fitness and gym.css
+Shopping website: online shopping.html and online shopping.css
+Restaurant website: restorent.html and restorent.css
 
-- [ ] Add your name, roll number, branch, and section above.
-- [x] Include screenshots of the three webpages in a consolidated PDF report.
-- [x] Upload the three case studies and the PDF report to the GitHub repository.
+Report
+------
+
+The report includes screenshots of the three webpages.
+
+PDF report: case-study-report.pdf
+Word report: case-study-report.docx
